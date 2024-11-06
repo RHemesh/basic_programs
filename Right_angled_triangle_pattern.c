@@ -17,3 +17,5 @@ int main()
 
     return 0;
 }
+
+//to reverse  for(int i=n;i>0;i--)
