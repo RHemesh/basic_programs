@@ -12,7 +12,7 @@ int main()
         scanf("%d",&arr[i]);
         sum += arr[i];
     }
-    
+
     int avg = sum/n;
     
     printf("average of %d numbers = %d",n,avg);
