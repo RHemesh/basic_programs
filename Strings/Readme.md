@@ -1,11 +1,15 @@
 
 Points to Remember:
 
-%[^\n] represents take string including spaces till you get newline character
+%[^\n] It takes string including spaces till it gets newline character
 
 %s takes the string till the space character
 
 strcmp() will return 0 if both the strings are equal
+
+
+
+Constant pointer and pointer to constant:
 
 char str1[] = "hello" -->Tstr1 acts as a constant pointer to a string
         ->str1 = "hi"; constant pointer cannot be changed
@@ -20,6 +24,7 @@ char *p = "Hello" -->p acts as a pointer to constant string
         ->p++;    
         ->*p = 'H'     It will not work because string is constant cannot be changed
         ->Here address can be changed and the variable is constant that cannot be changed
+
 
 
 Prototypes:
@@ -71,5 +76,5 @@ strlwr(),strupr() -->converts string to upper and lower characters
            ->strupr(char *s);
             void xstrupr(char *s);
 
-            
+
 
