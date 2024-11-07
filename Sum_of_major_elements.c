@@ -32,7 +32,7 @@ int main()
     {
         for(int j=0;j<c;j++)
         {
-            if(arr[i] == arr[j])
+            if(i == j)
             {
                 sum = sum + arr[i][j];
             }
