@@ -1,4 +1,9 @@
 
-%[^\n] -->It represents take string including spaces till you get newline character
+Points to Remember:
 
-%s ->It takes the string till the space character
+%[^\n] represents take string including spaces till you get newline character
+
+%s takes the string till the space character
+
+strcmp() will return 0 if both the strings are equal
+
