@@ -25,3 +25,6 @@ int main()
     return 0;
 
 }
+
+
+//To find the last occurance of the character in the strinng then use strrchr() instead of strchr()
