@@ -20,8 +20,8 @@ char str1[] = "hello" -->Tstr1 acts as a constant pointer to a string
 
 char *p = "Hello" -->p acts as a pointer to constant string
         ->p = "Hi";    works because pointer is not constant
-        ->p = s;       
-        ->p++;    
+        ->p = s;       works because pointer is not constant
+        ->p++;         works because pointer is not constant
         ->*p = 'H'     It will not work because string is constant cannot be changed
         ->Here address can be changed and the variable is constant that cannot be changed
 
