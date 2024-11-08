@@ -57,15 +57,15 @@ strncmp():   strncmp(const char *s1,const char *s2,size_t num);
 
 
 strchr():   strchr(const char *str,int character);
-            void xstrchr(const char *str,int character)
+            char *xstrchr(const char *str,int character)
             //It finds the first occurance of the character
 
 strrchr():  strrchr(const char *str,int character);
-            void xstrrchr(const char *str,int character)
+            char *xstrrchr(const char *str,int character)
             //This function finds the last occurance of the character in the string
 
 strstr():   strstr(const char *str,const char *substr);
-            void xstrstr(const char *str,const char *substr)
+            char *xstrstr(const char *str,const char *substr)
 
 strdup():   strdup(const char *s);
             void xstrdup(const char *s)
