@@ -17,6 +17,7 @@ char *xstrstr(const char* str,const char* substr)
         if(substr[j] == '\0')
         {
             return (char *)(str + i);
+            //return (char *)&str[i];
         }
     }
 
