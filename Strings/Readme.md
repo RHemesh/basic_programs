@@ -5,6 +5,11 @@ Points to Remember:
 
 %s takes the string till the space character
 
+__fpurge(stdin);  It is a non-standard function used to clear buffer/purge for new 
+                line character 
+
+getchar();  It is a standard function in c ,It clears the buffer for newline character
+
 strcmp() will return 0 if both the strings are equal
 
 
