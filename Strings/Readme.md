@@ -31,6 +31,36 @@ char *p = "Hello" -->p acts as a pointer to constant string
         ->Here address can be changed and the variable is constant that cannot be changed
 
 
+Here we can initialize string in three ways:
+
+char str[10];  ->char of array
+char *str;     ->pointer to a string
+char *str = (char *)malloc(10 *sizeof(char));   ->Dynamic memory allocation
+
+char str[10];
+It is a static memory allocation stored in a stack which allocates 10 bytes of continous memory
+It is fixed size of memory cannot be resized,It is a compile time allocation
+we can change the character for particular index str[0] = 'h';    -->It works
+we cannot change the whole string by assigning the literal str = "new";  -->error
+we can copy the string using strcpy(str,"Hemesh");     ->No error
+to print value and a address --> printf("%s:address = %p",str,(void *)&str);
+
+char *str;
+It is stored in a stack memory and points to a string literal stored in read only memory
+we cannot modify the string literal contents
+we can modify the string  str[0] = 'j'     ->error
+we can assign another string str = "new";  ->no error,It works
+
+char *str = malloc(10)
+It is stored in stack nd pointed to the dynamically allocated memory
+manually we need to free the memory after allocating
+we can modify the existing string content str[0] = 'H'  ->No error
+we cannot reassign the string literal to the string str = "djfsk";  ->error
+
+
+
+
+
 
 Prototypes:
 
